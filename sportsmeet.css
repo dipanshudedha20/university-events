@@ -1,0 +1,19 @@
+/* sportsmeet.css */
+body {
+    background-color: #f1f7e9;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  .event-details {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .event-details img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+  

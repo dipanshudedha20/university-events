@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Events</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* General Reset and Font Style */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #2ecc71;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: color 0.3s ease-in-out;
+    }
+
+    header nav ul li a:hover {
+      color: #3498db;
+    }
+
+    /* Main Content Styling */
+    main {
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .event-overview {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* Event Card Styling */
+    .event-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      overflow: hidden;
+    }
+
+    .event-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .event-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .event-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .event-card h2 {
+      padding: 15px;
+      font-size: 1.8rem;
+      color: #2ecc71;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .event-card p {
+      padding: 0 15px;
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .event-card a {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .event-card a:hover {
+      background-color: #2980b9;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #2ecc71;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Fade-in Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to University Events</h1>
+    <nav>
+      <ul>
+        <li><a href="events/techfest.html">Techfest</a></li>
+        <li><a href="events/culturalnight.html">Cultural Night</a></li>
+        <li><a href="events/sportsmeet.html">Sports Meet</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="event-overview">
+      <article class="event-card">
+        <img src="images/techfest.jpg" alt="Techfest Image">
+        <h2>Techfest</h2>
+        <p>Join us for the annual tech extravaganza!</p>
+        <a href="events/techfest.html">Learn More</a>
+      </article>
+      <article class="event-card">
+        <img src="images/culturalnight.jpg" alt="Cultural Night Image">
+        <h2>Cultural Night</h2>
+        <p>Experience the vibrant cultural performances!</p>
+        <a href="events/culturalnight.html">Learn More</a>
+      </article>
+      <article class="event-card">
+        <img src="images/sportsmeet.jpg" alt="Sports Meet Image">
+        <h2>Sports Meet</h2>
+        <p>Get ready for the annual sports competitions!</p>
+        <a href="events/sportsmeet.html">Learn More</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 University Events</p>
+  </footer>
+</body>
+</html>
