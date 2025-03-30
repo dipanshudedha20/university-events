@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultural Night - University Events</title>
+  <link rel="stylesheet" href="../css/culturalnight.css">
+  <style>
+    /* Adding some smooth transition effects */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9e8f3;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    header {
+      background-color: #9b59b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    header nav ul li a:hover {
+      color: #3498db;
+    }
+
+    main {
+      padding: 20px;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    section.event-details {
+      text-align: center;
+    }
+
+    section.event-details h2 {
+      font-size: 2rem;
+      margin-top: 20px;
+      color: #8e44ad;
+    }
+
+    section.event-details p {
+      font-size: 1.2rem;
+      color: #333;
+      line-height: 1.6;
+      margin-top: 20px;
+      padding: 0 15px;
+    }
+
+    section.event-details img {
+      max-width: 80%;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    section.event-details img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #9b59b6;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cultural Night 2025</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="techfest.html">Techfest</a></li>
+        <li><a href="sportsmeet.html">Sports Meet</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="event-details">
+      <h2>What is Cultural Night?</h2>
+      <p>Cultural Night is a grand celebration of our university's diverse cultural backgrounds. Students from various cultural groups showcase traditional dances, songs, and performances. It's a night of fun, learning, and unity!</p>
+      <img src="../images/culturalnight.jpg" alt="Cultural Night Image">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 University Events</p>
+  </footer>
+
+  <script>
+    // Add a simple fade-in transition effect for the entire page on load
+    window.addEventListener("load", function() {
+      document.body.style.transition = "background-color 1s ease-in-out";
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+/* culturalnight.css */
+body {
+    background-color: #f9e8f3;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  .event-details {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .event-details img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+  
